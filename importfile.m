@@ -13,7 +13,7 @@ function bgspreadsheet = importfile(workbookFile, sheetName, dataLines)
 %  scalar integers for dis-contiguous row intervals.
 %
 %  Example:
-%  bgspreadsheet = importfile("G:\Models\COPSE-main\new_forcings\bgspreadsheet.xlsx", "Sheet 1", [1, 34]);
+%  bgspreadsheet = importfile("new_forcings\bgspreadsheet.xlsx", "Sheet 1", [1, 34]);
 %
 %  See also READTABLE.
 %
@@ -53,5 +53,6 @@ for idx = 2:size(dataLines, 1)
     tb = readtable(workbookFile, opts, "UseExcel", false);
     bgspreadsheet = [bgspreadsheet; tb]; %#ok<AGROW>
 end
+
 
 end
