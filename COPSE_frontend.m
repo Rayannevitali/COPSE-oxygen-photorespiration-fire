@@ -197,8 +197,7 @@ function run = COPSE_frontend(S,ffeedback,pfeedback)
     
     %%%% load vegetation feedback data if required
    % if ffeedback == "vitali" || pfeedback == "vitali" || ffeedback == "combined" || pfeedback == "combined" 
-       % feedbackd = importfile("G:\Models\COPSE-main\new_forcings\bgspreadsheet_updated.xlsx");
-       feedbackd = importfile("/Volumes/PhD stuff/Models/COPSE-main/new_forcings/bgspreadsheet_updated.xlsx");
+       feedbackd = importfile("new_forcings/bgspreadsheet_updated.xlsx");
         forcings.oxygen = feedbackd.oxygen;           %%% oxygen from feedback data
         forcings.fireox = feedbackd.fireBionorm;      %%% fire feedback effect from DGVM data
         forcings.prodox = feedbackd.photoBionorm;     %%% productivity feedback effect from DGVM data
@@ -419,3 +418,4 @@ function run = COPSE_frontend(S,ffeedback,pfeedback)
 
 
 end
+
