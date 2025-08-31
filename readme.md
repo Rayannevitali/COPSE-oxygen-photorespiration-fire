@@ -21,17 +21,22 @@ This version of COPSE is a lightly updated version of the Tostevin & Mills (2020
 
 ## Repository contents
 
-| File                 | Description |
-|----------------------|-------------|
-| `COPSE_frontend.m`   | Main frontend script, runs the model and plots results. Use `COPSE_frontend(0)` to run. |
-| `COPSE_equations.m`  | Contains flux and reservoir calculations (do not run directly). |
-| `COPSE_sens.m`       | Runs sensitivity analysis and plots results. |
-| `COPSE_plot.m`       | Called by frontend to generate plots. |
-| `COPSE_plot_sens.m`  | Called by sensitivity analysis to generate plots. |
-| `ox_analysis.m`      | Script to run different combinations of feedbacks. |
-| `cpoint.m`           | Function to calculate compensation point. |
-| `importfile.m`       | Script to import the new spreadsheet from LPJ-LMfire output. |
-| `interp1qr.m`        | Linear interpolation routine. |
+| File / Directory        | Description |
+|-------------------------|-------------|
+| `COPSE_frontend.m`      | Main frontend script, runs the model and plots results. Use `COPSE_frontend(0)` to run. |
+| `COPSE_equations.m`     | Contains flux and reservoir calculations (do not run directly). |
+| `COPSE_sens.m`          | Runs sensitivity analysis and plots results. |
+| `COPSE_plot.m`          | Called by frontend to generate plots. |
+| `COPSE_plot_sens.m`     | Called by sensitivity analysis to generate plots. |
+| `ox_analysis.m`         | Script to run different combinations of feedbacks. |
+| `cpoint.m`              | Function to calculate compensation point. |
+| `importfile.m`          | Script to import the new spreadsheet from LPJ-LMfire output. |
+| `interp1qr.m`           | Linear interpolation routine. |
+| `output/`               | Directory for model output files. |
+| `reloaded_forcings/`    | Pre-processed forcing files for simulations. |
+| `new_forcings/`         | Additional or updated forcing files. |
+| `data/`                 | Input data and parameters used by the model. |
+| `documentation/`        | Additional documentation, notes, or figures related to COPSE. |
 
 
 > **Note:** Requires MATLAB (tested in R2018a, Windows 10 x64). Run time ~5 seconds. No installation required. Large HPC outputs are not included.  
@@ -42,7 +47,7 @@ This version of COPSE is a lightly updated version of the Tostevin & Mills (2020
 
 - The manuscript uses COPSE with different combinations **fire and photorespiration feedbacks**, over the Phanerozoic, incorporating outputs from LPJ-LMfire.
 - LPJ-LMfire generated forcing data is found in: `new_forcings/bgspreadsheet_updated.xlsx`
-- Simulations can be reproduced by running `ox_analysis.m`
+- Simulations can be reproduced by running `ox_analysis.m` and output for this study is given in the `output`directory.
 
 ---
 
