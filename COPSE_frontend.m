@@ -1,6 +1,6 @@
 %%%% COPSE V2.1 (Carbon Oxygen Phosphorus Sulfur Evolution)
-%%%% As used in Tostevin and Mills (2020) Interface Focus
-%%%% Coded by Benjamin JW Mills // b.mills@leeds.ac.uk
+%%%% As used in Vitali et al (2025) Science Advances
+%%%% Coded by Rayanne Vitali // rvitali@envs.au.dk
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%   Define parameters   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -416,5 +416,6 @@ function run = COPSE_frontend(S,ffeedback,pfeedback)
     end
 
     
+
 
 end
